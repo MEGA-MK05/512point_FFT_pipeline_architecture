@@ -1,0 +1,53 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : top
+Version: V-2023.12-SP5-4
+Date   : Sat Aug  2 20:54:49 2025
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: TT_0P80V_0P00V_0P00V_0P00V_25C   Library: GF22FDX_SC7P5T_116CPP_BASE_CSC20L_TT_0P80V_0P00V_0P00V_0P00V_25C
+Wire Load Model Mode: enclosed
+
+  Startpoint: u_stage_0_0_1/o_valid_pipe_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_twidle0_1/i_valid_d_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_stage_0_0_1/o_valid_pipe_reg_0_/CLK (SC7P5T_DFFRQX4_S_CSC20L)
+                                                          0.00 #     0.00 r
+  u_stage_0_0_1/o_valid_pipe_reg_0_/Q (SC7P5T_DFFRQX4_S_CSC20L)
+                                                         47.23      47.23 f
+  u_stage_0_0_1/o_valid (stage_buffer_IN_WIDTH9_OUT_WIDTH10_NUM_ELEMS256_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY0)
+                                                          0.00      47.23 f
+  u_twidle0_1/i_valid (stage_0_0_2)                       0.00      47.23 f
+  u_twidle0_1/i_valid_d_reg/D (SC7P5T_DFFRQNX1_AS_CSC20L)
+                                                          0.00      47.23 f
+  data arrival time                                                 47.23
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                      50.00      50.00
+  u_twidle0_1/i_valid_d_reg/CLK (SC7P5T_DFFRQNX1_AS_CSC20L)
+                                                          0.00      50.00 r
+  library hold time                                      15.16      65.16
+  data required time                                                65.16
+  --------------------------------------------------------------------------
+  data required time                                                65.16
+  data arrival time                                                -47.23
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -17.93
+
+
+1

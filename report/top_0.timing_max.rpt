@@ -1,0 +1,88 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : top
+Version: V-2023.12-SP5-4
+Date   : Sat Aug  2 20:54:49 2025
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: TT_0P80V_0P00V_0P00V_0P00V_25C   Library: GF22FDX_SC7P5T_116CPP_BASE_CSC20L_TT_0P80V_0P00V_0P00V_0P00V_25C
+Wire Load Model Mode: enclosed
+
+  Startpoint: u_twidle1_3/data_idx_reg_5_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_twidle1_3/dout_q_reg_14__22_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_twidle1_3/data_idx_reg_5_/CLK (SC7P5T_DFFRQX4_S_CSC20L)
+                                                          0.00       0.00 r
+  u_twidle1_3/data_idx_reg_5_/Q (SC7P5T_DFFRQX4_S_CSC20L)
+                                                         56.77      56.77 r
+  u_twidle1_3/U14/Z (SC7P5T_INVX20_CSC20L)               24.19      80.96 f
+  u_twidle1_3/U677/Z (SC7P5T_BUFX12_CSC20L)              30.44     111.40 f
+  u_twidle1_3/U15/Z (SC7P5T_AN2X6_CSC20L)                39.76     151.16 f
+  u_twidle1_3/U161/Z (SC7P5T_BUFX8_A_CSC20L)             42.39     193.55 f
+  u_twidle1_3/U2044/Z (SC7P5T_BUFX2_A_CSC20L)            57.46     251.01 f
+  u_twidle1_3/U2106/Z (SC7P5T_INVX2_CSC20L)              65.36     316.37 r
+  u_twidle1_3/intadd_1020_U5/S (SC7P5T_FAX1_A_CSC20L)    81.74     398.11 f
+  u_twidle1_3/intadd_1135_U3/S (SC7P5T_FAX1_A_CSC20L)    66.93     465.03 r
+  u_twidle1_3/intadd_1136_U2/S (SC7P5T_FAX1_A_CSC20L)    66.39     531.42 f
+  u_twidle1_3/intadd_903_U4/CO (SC7P5T_FAX1_A_CSC20L)    41.80     573.22 f
+  u_twidle1_3/intadd_903_U3/CO (SC7P5T_FAX2_A_CSC20L)    32.90     606.12 f
+  u_twidle1_3/intadd_903_U2/CO (SC7P5T_FAX1_A_CSC20L)    32.00     638.13 f
+  u_twidle1_3/U8586/Z (SC7P5T_INVX2_CSC20L)              10.55     648.67 r
+  u_twidle1_3/intadd_896_U14/CO (SC7P5T_FAX1_A_CSC20L)
+                                                         44.92     693.60 r
+  u_twidle1_3/intadd_896_U13/CO (SC7P5T_FAX1_A_CSC20L)
+                                                         44.75     738.35 r
+  u_twidle1_3/intadd_896_U12/CO (SC7P5T_FAX1_A_CSC20L)
+                                                         44.75     783.10 r
+  u_twidle1_3/intadd_896_U11/CO (SC7P5T_FAX1_A_CSC20L)
+                                                         44.75     827.85 r
+  u_twidle1_3/intadd_896_U10/CO (SC7P5T_FAX1_A_CSC20L)
+                                                         44.75     872.60 r
+  u_twidle1_3/intadd_896_U9/CO (SC7P5T_FAX1_A_CSC20L)    44.75     917.35 r
+  u_twidle1_3/intadd_896_U8/CO (SC7P5T_FAX1_A_CSC20L)    44.75     962.10 r
+  u_twidle1_3/intadd_896_U7/CO (SC7P5T_FAX1_A_CSC20L)    44.75    1006.85 r
+  u_twidle1_3/intadd_896_U6/CO (SC7P5T_FAX1_A_CSC20L)    44.75    1051.61 r
+  u_twidle1_3/intadd_896_U5/CO (SC7P5T_FAX1_A_CSC20L)    44.75    1096.36 r
+  u_twidle1_3/intadd_896_U4/CO (SC7P5T_FAX1_A_CSC20L)    44.75    1141.11 r
+  u_twidle1_3/intadd_896_U3/CO (SC7P5T_FAX1_A_CSC20L)    44.75    1185.86 r
+  u_twidle1_3/intadd_896_U2/CO (SC7P5T_FAX1_A_CSC20L)    42.69    1228.55 r
+  u_twidle1_3/U6132/Z (SC7P5T_INVX2_CSC20L)              10.90    1239.44 f
+  u_twidle1_3/U1111/Z (SC7P5T_ND2X2_CSC20L)               9.81    1249.25 r
+  u_twidle1_3/U1109/Z (SC7P5T_AO211X1_CSC20L)            31.98    1281.23 r
+  u_twidle1_3/U1110/Z (SC7P5T_INVX2_CSC20L)               9.35    1290.58 f
+  u_twidle1_3/U8584/Z (SC7P5T_NR2IAX2_CSC20L)            11.01    1301.59 r
+  u_twidle1_3/U8585/Z (SC7P5T_ND2X1_MR_CSC20L)           11.01    1312.60 f
+  u_twidle1_3/U136/Z (SC7P5T_OAI21X1_CSC20L)             11.16    1323.77 r
+  u_twidle1_3/dout_q_reg_14__22_/D (SC7P5T_DFFRQX1_AS_CSC20L)
+                                                          0.00    1323.77 r
+  data arrival time                                               1323.77
+
+  clock clk (rise edge)                                1400.00    1400.00 .
+  clock network delay (ideal)                             0.00    1400.00
+  clock uncertainty                                     -50.00    1350.00
+  u_twidle1_3/dout_q_reg_14__22_/CLK (SC7P5T_DFFRQX1_AS_CSC20L)
+                                                          0.00    1350.00 r
+  library setup time                                    -22.33    1327.67
+  data required time                                              1327.67
+  --------------------------------------------------------------------------
+  data required time                                              1327.67
+  data arrival time                                              -1323.77
+  --------------------------------------------------------------------------
+  slack (MET)                                                        3.90
+
+
+1

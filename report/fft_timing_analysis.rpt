@@ -1,0 +1,36 @@
+=== 타이밍 분석 ===
+Information: Updating design information... (UID-85)
+Warning: Design 'top' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : top
+Version: V-2023.12-SP5-4
+Date   : Sat Aug  2 20:54:15 2025
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: TT_0P80V_0P00V_0P00V_0P00V_25C   Library: GF22FDX_SC7P5T_116CPP_BASE_CSC20L_TT_0P80V_0P00V_0P00V_0P00V_25C
+Wire Load Model Mode: enclosed
+No paths.
+
+1
+Warning: cell 'u_final_output/output_counter_reg[0]' is of the wrong type. (UID-119)
+Warning: cell 'u_final_output/dout_q_reg[15][0]' is of the wrong type. (UID-119)
+Warning: cell 'u_final_output/dout_q_reg[15][1]' is of the wrong type. (UID-119)
+Warning: cell 'u_final_output/dout_q_reg[15][2]' is of the wrong type. (UID-119)
+Warning: cell 'u_final_output/dout_q_reg[15][3]' is of the wrong type. (UID-119)
+Warning: cell 'u_final_output/dout_q_reg[15][4]' is of the wrong type. (UID-119)
+Warning: cell 'u_final_output/dout_q_reg[15][5]' is of the wrong type. (UID-119)
+Warning: cell 'u_final_output/dout_q_reg[15][6]' is of the wrong type. (UID-119)
+Warning: cell 'u_final_output/dout_q_reg[15][7]' is of the wrong type. (UID-119)
+Warning: cell 'u_final_output/dout_q_reg[15][8]' is of the wrong type. (UID-119)
+Warning: ...72389 additional objects are of the wrong type. (UID-119)
+Warning: Ignoring all 72399 objects in collection '_sel641' because they are not of type pin, port, net, clock, or generated_clock. (UID-445)
+Error: Value for list '-to' must have 1 elements. (CMD-036)
+0
+Error: Required argument '-type' was not found (CMD-007)

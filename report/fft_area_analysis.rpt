@@ -1,0 +1,580 @@
+=== 면적 분석 ===
+ 
+****************************************
+Report : area
+Design : top
+Version: V-2023.12-SP5-4
+Date   : Sat Aug  2 20:54:16 2025
+****************************************
+
+Library(s) Used:
+
+    GF22FDX_SC7P5T_116CPP_BASE_CSC20L_TT_0P80V_0P00V_0P00V_0P00V_25C (File: /pdk/GF22FDX_SC7P5T_116CPP_BASE_CSC20L_FDK_RELV02R80/db/GF22FDX_SC7P5T_116CPP_BASE_CSC20L_TT_0P80V_0P00V_0P00V_0P00V_25C.db)
+
+Number of ports:                        40137
+Number of nets:                        325683
+Number of cells:                       286432
+Number of combinational cells:         213482
+Number of sequential cells:             72662
+Number of macros/black boxes:               0
+Number of buf/inv:                      27958
+Number of references:                      24
+
+Combinational area:              99203.455176
+Buf/Inv area:                     7390.267222
+Noncombinational area:          101182.598256
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                200386.053432
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area              Local cell area
+                                  --------------------  ------------------------------- 
+Hierarchical cell                 Absolute     Percent  Combi-      Noncombi-    Black-
+                                  Total        Total    national    national     boxes   Design
+--------------------------------  -----------  -------  ----------  -----------  ------  -----------------------------------------------------------------------------------------------------------------
+top                               200386.0534    100.0      0.0000       0.0000  0.0000  top
+u_cbfp                             56555.8460     28.2  23039.9666   33382.6650  0.0000  fft_cbfp_module0
+u_cbfp/clk_gate_applied_shift_out_reg[127]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_7
+u_cbfp/clk_gate_applied_shift_out_reg[191]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_8
+u_cbfp/clk_gate_applied_shift_out_reg[255]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_9
+u_cbfp/clk_gate_applied_shift_out_reg[319]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_10
+u_cbfp/clk_gate_applied_shift_out_reg[383]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_11
+u_cbfp/clk_gate_applied_shift_out_reg[447]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_12
+u_cbfp/clk_gate_applied_shift_out_reg[511]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_13
+u_cbfp/clk_gate_applied_shift_out_reg[63]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_6
+u_cbfp/clk_gate_bfly02_imag_out_reg[15]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_5
+u_cbfp/clk_gate_block_group_min_imag_reg[0][0]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_22
+u_cbfp/clk_gate_block_group_min_imag_reg[0][1]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_23
+u_cbfp/clk_gate_block_group_min_imag_reg[0][2]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_24
+u_cbfp/clk_gate_block_group_min_imag_reg[0][3]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_25
+u_cbfp/clk_gate_block_group_min_imag_reg[1][0]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_26
+u_cbfp/clk_gate_block_group_min_imag_reg[1][1]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_27
+u_cbfp/clk_gate_block_group_min_imag_reg[1][2]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_28
+u_cbfp/clk_gate_block_group_min_imag_reg[1][3]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_29
+u_cbfp/clk_gate_block_group_min_imag_reg[2][0]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_30
+u_cbfp/clk_gate_block_group_min_imag_reg[2][1]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_31
+u_cbfp/clk_gate_block_group_min_imag_reg[2][2]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_32
+u_cbfp/clk_gate_block_group_min_imag_reg[2][3]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_33
+u_cbfp/clk_gate_block_group_min_imag_reg[3][0]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_34
+u_cbfp/clk_gate_block_group_min_imag_reg[3][1]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_35
+u_cbfp/clk_gate_block_group_min_imag_reg[3][2]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_36
+u_cbfp/clk_gate_block_group_min_imag_reg[3][3]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_37
+u_cbfp/clk_gate_block_group_min_imag_reg[4][0]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_38
+u_cbfp/clk_gate_block_group_min_imag_reg[4][1]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_39
+u_cbfp/clk_gate_block_group_min_imag_reg[4][2]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_40
+u_cbfp/clk_gate_block_group_min_imag_reg[4][3]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_41
+u_cbfp/clk_gate_block_group_min_imag_reg[5][0]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_42
+u_cbfp/clk_gate_block_group_min_imag_reg[5][1]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_43
+u_cbfp/clk_gate_block_group_min_imag_reg[5][2]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_44
+u_cbfp/clk_gate_block_group_min_imag_reg[5][3]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_45
+u_cbfp/clk_gate_block_group_min_imag_reg[6][0]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_46
+u_cbfp/clk_gate_block_group_min_imag_reg[6][1]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_47
+u_cbfp/clk_gate_block_group_min_imag_reg[6][2]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_48
+u_cbfp/clk_gate_block_group_min_imag_reg[6][3]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_49
+u_cbfp/clk_gate_block_group_min_imag_reg[7][0]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_50
+u_cbfp/clk_gate_block_group_min_imag_reg[7][1]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_51
+u_cbfp/clk_gate_block_group_min_imag_reg[7][2]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_52
+u_cbfp/clk_gate_block_group_min_imag_reg[7][3]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_53
+u_cbfp/clk_gate_block_shift_value_reg[0]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_14
+u_cbfp/clk_gate_block_shift_value_reg[1]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_15
+u_cbfp/clk_gate_block_shift_value_reg[2]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_16
+u_cbfp/clk_gate_block_shift_value_reg[3]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_17
+u_cbfp/clk_gate_block_shift_value_reg[4]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_18
+u_cbfp/clk_gate_block_shift_value_reg[5]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_19
+u_cbfp/clk_gate_block_shift_value_reg[6]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_20
+u_cbfp/clk_gate_block_shift_value_reg[7]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_21
+u_cbfp/clk_gate_block_storage_imag_reg[0][0]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_87
+u_cbfp/clk_gate_block_storage_imag_reg[0][16]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_103
+u_cbfp/clk_gate_block_storage_imag_reg[0][32]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_119
+u_cbfp/clk_gate_block_storage_imag_reg[0][48]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_135
+u_cbfp/clk_gate_block_storage_imag_reg[1][0]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_151
+u_cbfp/clk_gate_block_storage_imag_reg[1][16]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_167
+u_cbfp/clk_gate_block_storage_imag_reg[1][32]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_183
+u_cbfp/clk_gate_block_storage_imag_reg[1][48]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_199
+u_cbfp/clk_gate_block_storage_imag_reg[2][0]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_215
+u_cbfp/clk_gate_block_storage_imag_reg[2][16]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_231
+u_cbfp/clk_gate_block_storage_imag_reg[2][32]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_247
+u_cbfp/clk_gate_block_storage_imag_reg[2][48]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_263
+u_cbfp/clk_gate_block_storage_imag_reg[3][0]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_279
+u_cbfp/clk_gate_block_storage_imag_reg[3][16]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_295
+u_cbfp/clk_gate_block_storage_imag_reg[3][32]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_311
+u_cbfp/clk_gate_block_storage_imag_reg[3][48]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_327
+u_cbfp/clk_gate_block_storage_imag_reg[4][0]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_343
+u_cbfp/clk_gate_block_storage_imag_reg[4][16]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_359
+u_cbfp/clk_gate_block_storage_imag_reg[4][32]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_375
+u_cbfp/clk_gate_block_storage_imag_reg[4][48]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_391
+u_cbfp/clk_gate_block_storage_imag_reg[5][0]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_407
+u_cbfp/clk_gate_block_storage_imag_reg[5][16]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_423
+u_cbfp/clk_gate_block_storage_imag_reg[5][32]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_439
+u_cbfp/clk_gate_block_storage_imag_reg[5][48]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_455
+u_cbfp/clk_gate_block_storage_imag_reg[6][0]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_471
+u_cbfp/clk_gate_block_storage_imag_reg[6][16]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_487
+u_cbfp/clk_gate_block_storage_imag_reg[6][32]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_503
+u_cbfp/clk_gate_block_storage_imag_reg[6][48]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_519
+u_cbfp/clk_gate_block_storage_imag_reg[7][0]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_535
+u_cbfp/clk_gate_block_storage_imag_reg[7][16]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_551
+u_cbfp/clk_gate_block_storage_imag_reg[7][32]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_567
+u_cbfp/clk_gate_block_storage_imag_reg[7][48]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_583
+u_cbfp/clk_gate_group_min_valid_reg[7]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_1
+u_cbfp/clk_gate_input_block_counter_reg
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_599
+u_cbfp/clk_gate_output_block_counter_reg
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_4
+u_cbfp/clk_gate_output_counter_reg
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_3
+u_cbfp/clk_gate_pipeline_delay_counter_reg
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_2
+u_cbfp/clk_gate_stage1_buffer_real_reg[15]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module0_86
+u_cbfp2                             4135.4928      2.1   3008.7384    1074.6936  0.0000  fft_cbfp_module1
+u_cbfp2/clk_gate_applied_shift_out_2_reg[0]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module1_1
+u_cbfp2/clk_gate_applied_shift_out_2_reg[100]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module1_101
+u_cbfp2/clk_gate_applied_shift_out_2_reg[112]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module1_113
+u_cbfp2/clk_gate_applied_shift_out_2_reg[128]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module1_129
+u_cbfp2/clk_gate_applied_shift_out_2_reg[144]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module1_145
+u_cbfp2/clk_gate_applied_shift_out_2_reg[160]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module1_161
+u_cbfp2/clk_gate_applied_shift_out_2_reg[16]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module1_17
+u_cbfp2/clk_gate_applied_shift_out_2_reg[176]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module1_177
+u_cbfp2/clk_gate_applied_shift_out_2_reg[192]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module1_193
+u_cbfp2/clk_gate_applied_shift_out_2_reg[208]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module1_209
+u_cbfp2/clk_gate_applied_shift_out_2_reg[224]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module1_225
+u_cbfp2/clk_gate_applied_shift_out_2_reg[240]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module1_241
+u_cbfp2/clk_gate_applied_shift_out_2_reg[256]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module1_257
+u_cbfp2/clk_gate_applied_shift_out_2_reg[272]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module1_273
+u_cbfp2/clk_gate_applied_shift_out_2_reg[288]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module1_289
+u_cbfp2/clk_gate_applied_shift_out_2_reg[304]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module1_305
+u_cbfp2/clk_gate_applied_shift_out_2_reg[320]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module1_321
+u_cbfp2/clk_gate_applied_shift_out_2_reg[32]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module1_33
+u_cbfp2/clk_gate_applied_shift_out_2_reg[336]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module1_337
+u_cbfp2/clk_gate_applied_shift_out_2_reg[352]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module1_353
+u_cbfp2/clk_gate_applied_shift_out_2_reg[368]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module1_369
+u_cbfp2/clk_gate_applied_shift_out_2_reg[384]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module1_385
+u_cbfp2/clk_gate_applied_shift_out_2_reg[400]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module1_401
+u_cbfp2/clk_gate_applied_shift_out_2_reg[416]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module1_417
+u_cbfp2/clk_gate_applied_shift_out_2_reg[432]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module1_433
+u_cbfp2/clk_gate_applied_shift_out_2_reg[448]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module1_449
+u_cbfp2/clk_gate_applied_shift_out_2_reg[464]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module1_465
+u_cbfp2/clk_gate_applied_shift_out_2_reg[480]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module1_481
+u_cbfp2/clk_gate_applied_shift_out_2_reg[48]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module1_49
+u_cbfp2/clk_gate_applied_shift_out_2_reg[496]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module1_497
+u_cbfp2/clk_gate_applied_shift_out_2_reg[64]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module1_65
+u_cbfp2/clk_gate_applied_shift_out_2_reg[80]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module1_81
+u_cbfp2/clk_gate_data_counter_reg      1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module1_0
+u_cbfp2/clk_gate_valid_counter_reg
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_fft_cbfp_module1_513
+u_final_cbfp_scaler                 2794.3008      1.4   1581.3816     628.9752  0.0000  final_cbfp_scaler_IN_WIDTH16_OUT_WIDTH13_SHIFT_WIDTH5_DATA_PER_CLK16
+u_final_cbfp_scaler/clk_gate_internal_cycle_idx_reg
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_final_cbfp_scaler_IN_WIDTH16_OUT_WIDTH13_SHIFT_WIDTH5_DATA_PER_CLK16_0
+u_final_cbfp_scaler/clk_gate_valid_counter_reg
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_final_cbfp_scaler_IN_WIDTH16_OUT_WIDTH13_SHIFT_WIDTH5_DATA_PER_CLK16_1
+u_final_cbfp_scaler/indexsum_calc    580.8816      0.3    580.8816       0.0000  0.0000  indexsum_calculator_SHIFT_WIDTH5_TOTAL_SIZE512_DATA_PER_CLK16
+u_final_output                     31237.5233     15.6  11092.2913   20091.6401  0.0000  streaming_bit_reversal_DATA_WIDTH13_TOTAL_SIZE512_DATA_PER_CLK16
+u_final_output/clk_gate_dout_i_reg[0]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_streaming_bit_reversal_DATA_WIDTH13_TOTAL_SIZE512_DATA_PER_CLK16_1
+u_final_output/clk_gate_internal_cycle_idx_reg
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_streaming_bit_reversal_DATA_WIDTH13_TOTAL_SIZE512_DATA_PER_CLK16_0
+u_final_output/clk_gate_output_counter_reg
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_streaming_bit_reversal_DATA_WIDTH13_TOTAL_SIZE512_DATA_PER_CLK16_514
+u_final_output/clk_gate_storage_i_reg[16]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_streaming_bit_reversal_DATA_WIDTH13_TOTAL_SIZE512_DATA_PER_CLK16_18
+u_final_output/clk_gate_storage_i_reg[17]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_streaming_bit_reversal_DATA_WIDTH13_TOTAL_SIZE512_DATA_PER_CLK16_19
+u_final_output/clk_gate_storage_i_reg[18]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_streaming_bit_reversal_DATA_WIDTH13_TOTAL_SIZE512_DATA_PER_CLK16_20
+u_final_output/clk_gate_storage_i_reg[19]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_streaming_bit_reversal_DATA_WIDTH13_TOTAL_SIZE512_DATA_PER_CLK16_21
+u_final_output/clk_gate_storage_i_reg[20]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_streaming_bit_reversal_DATA_WIDTH13_TOTAL_SIZE512_DATA_PER_CLK16_22
+u_final_output/clk_gate_storage_i_reg[21]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_streaming_bit_reversal_DATA_WIDTH13_TOTAL_SIZE512_DATA_PER_CLK16_23
+u_final_output/clk_gate_storage_i_reg[22]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_streaming_bit_reversal_DATA_WIDTH13_TOTAL_SIZE512_DATA_PER_CLK16_24
+u_final_output/clk_gate_storage_i_reg[23]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_streaming_bit_reversal_DATA_WIDTH13_TOTAL_SIZE512_DATA_PER_CLK16_25
+u_final_output/clk_gate_storage_i_reg[24]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_streaming_bit_reversal_DATA_WIDTH13_TOTAL_SIZE512_DATA_PER_CLK16_26
+u_final_output/clk_gate_storage_i_reg[25]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_streaming_bit_reversal_DATA_WIDTH13_TOTAL_SIZE512_DATA_PER_CLK16_27
+u_final_output/clk_gate_storage_i_reg[26]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_streaming_bit_reversal_DATA_WIDTH13_TOTAL_SIZE512_DATA_PER_CLK16_28
+u_final_output/clk_gate_storage_i_reg[27]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_streaming_bit_reversal_DATA_WIDTH13_TOTAL_SIZE512_DATA_PER_CLK16_29
+u_final_output/clk_gate_storage_i_reg[28]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_streaming_bit_reversal_DATA_WIDTH13_TOTAL_SIZE512_DATA_PER_CLK16_30
+u_final_output/clk_gate_storage_i_reg[29]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_streaming_bit_reversal_DATA_WIDTH13_TOTAL_SIZE512_DATA_PER_CLK16_31
+u_final_output/clk_gate_storage_i_reg[30]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_streaming_bit_reversal_DATA_WIDTH13_TOTAL_SIZE512_DATA_PER_CLK16_32
+u_final_output/clk_gate_storage_i_reg[31]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_streaming_bit_reversal_DATA_WIDTH13_TOTAL_SIZE512_DATA_PER_CLK16_33
+u_final_output/clk_gate_storage_i_reg[32]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_streaming_bit_reversal_DATA_WIDTH13_TOTAL_SIZE512_DATA_PER_CLK16_34
+u_final_output/clk_gate_storage_i_reg[33]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_streaming_bit_reversal_DATA_WIDTH13_TOTAL_SIZE512_DATA_PER_CLK16_35
+u_final_output/clk_gate_storage_i_reg[34]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_streaming_bit_reversal_DATA_WIDTH13_TOTAL_SIZE512_DATA_PER_CLK16_36
+u_final_output/clk_gate_storage_i_reg[35]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_streaming_bit_reversal_DATA_WIDTH13_TOTAL_SIZE512_DATA_PER_CLK16_37
+u_final_output/clk_gate_storage_i_reg[36]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_streaming_bit_reversal_DATA_WIDTH13_TOTAL_SIZE512_DATA_PER_CLK16_38
+u_final_output/clk_gate_storage_i_reg[37]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_streaming_bit_reversal_DATA_WIDTH13_TOTAL_SIZE512_DATA_PER_CLK16_39
+u_final_output/clk_gate_storage_i_reg[38]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_streaming_bit_reversal_DATA_WIDTH13_TOTAL_SIZE512_DATA_PER_CLK16_40
+u_final_output/clk_gate_storage_i_reg[39]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_streaming_bit_reversal_DATA_WIDTH13_TOTAL_SIZE512_DATA_PER_CLK16_41
+u_final_output/clk_gate_storage_i_reg[40]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_streaming_bit_reversal_DATA_WIDTH13_TOTAL_SIZE512_DATA_PER_CLK16_42
+u_final_output/clk_gate_storage_i_reg[41]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_streaming_bit_reversal_DATA_WIDTH13_TOTAL_SIZE512_DATA_PER_CLK16_43
+u_final_output/clk_gate_storage_i_reg[42]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_streaming_bit_reversal_DATA_WIDTH13_TOTAL_SIZE512_DATA_PER_CLK16_44
+u_final_output/clk_gate_storage_i_reg[43]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_streaming_bit_reversal_DATA_WIDTH13_TOTAL_SIZE512_DATA_PER_CLK16_45
+u_final_output/clk_gate_storage_i_reg[44]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_streaming_bit_reversal_DATA_WIDTH13_TOTAL_SIZE512_DATA_PER_CLK16_46
+u_final_output/clk_gate_storage_i_reg[45]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_streaming_bit_reversal_DATA_WIDTH13_TOTAL_SIZE512_DATA_PER_CLK16_47
+u_final_output/clk_gate_storage_i_reg[46]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_streaming_bit_reversal_DATA_WIDTH13_TOTAL_SIZE512_DATA_PER_CLK16_48
+u_final_output/clk_gate_storage_i_reg[47]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_streaming_bit_reversal_DATA_WIDTH13_TOTAL_SIZE512_DATA_PER_CLK16_49
+u_shift1                             925.9584      0.5    311.0424     613.3848  0.0000  shift_processor_IN_WIDTH20_OUT_WIDTH12
+u_shift1/clk_gate_dout_q_reg[15]       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_shift_processor_IN_WIDTH20_OUT_WIDTH12
+u_shift2                             891.3672      0.4    194.6016     695.2344  0.0000  shift_processor_IN_WIDTH23_OUT_WIDTH14
+u_shift2/clk_gate_dout_q_reg[15]       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_shift_processor_IN_WIDTH23_OUT_WIDTH14
+u_shift3                             902.5728      0.5    105.9312     795.1104  0.0000  shift_processor_IN_WIDTH23_OUT_WIDTH15
+u_shift3/clk_gate_dout_q_reg[15]       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_shift_processor_IN_WIDTH23_OUT_WIDTH15
+u_stage1_1_0                        1464.9408      0.7    706.3008     757.1088  0.0000  stage_buffer_und16_IN_WIDTH14_OUT_WIDTH15_BLK_SIZE16
+u_stage1_1_0/clk_gate_dout_q_reg[15]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_und16_IN_WIDTH14_OUT_WIDTH15_BLK_SIZE16
+u_stage2_0_1                        1179.4416      0.6    589.8600     588.0504  0.0000  stage_buffer_und8_IN_WIDTH12_OUT_WIDTH13_BLK_SIZE16
+u_stage2_0_1/clk_gate_dout_q_reg[15]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_und8_IN_WIDTH12_OUT_WIDTH13_BLK_SIZE16
+u_stage2_0_2                         645.6096      0.3     50.6688     593.4096  0.0000  stage_2_0_2
+u_stage2_0_2/clk_gate_fac_reg_q_reg[15]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_2_0_2
+u_stage2_1_1                        1317.6672      0.7    633.0816     683.0544  0.0000  stage_buffer_und4_IN_WIDTH13_OUT_WIDTH14_BLK_SIZE16
+u_stage2_1_1/clk_gate_dout_q_reg[15]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_und4_IN_WIDTH13_OUT_WIDTH14_BLK_SIZE16
+u_stage2_1_2                        1944.9024      1.0   1142.9016     800.4696  0.0000  stage_2_1_2
+u_stage2_1_2/clk_gate_fac_reg_q_reg[15]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_2_1_2
+u_stage2_2_1                        1459.3032      0.7    748.4088     709.3632  0.0000  stage_buffer_und2_IN_WIDTH15_OUT_WIDTH16_BLK_SIZE16
+u_stage2_2_1/clk_gate_dout_q_reg[15]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_und2_IN_WIDTH15_OUT_WIDTH16_BLK_SIZE16
+u_stage_0_0_1                      24003.4389     12.0  10090.6080   13854.6453  0.0000  stage_buffer_IN_WIDTH9_OUT_WIDTH10_NUM_ELEMS256_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY0
+u_stage_0_0_1/clk_gate_blk_cnt_reg
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH9_OUT_WIDTH10_NUM_ELEMS256_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY0_516
+u_stage_0_0_1/clk_gate_ram_i_reg[111]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH9_OUT_WIDTH10_NUM_ELEMS256_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY0_401
+u_stage_0_0_1/clk_gate_ram_i_reg[127]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH9_OUT_WIDTH10_NUM_ELEMS256_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY0_385
+u_stage_0_0_1/clk_gate_ram_i_reg[143]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH9_OUT_WIDTH10_NUM_ELEMS256_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY0_369
+u_stage_0_0_1/clk_gate_ram_i_reg[159]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH9_OUT_WIDTH10_NUM_ELEMS256_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY0_353
+u_stage_0_0_1/clk_gate_ram_i_reg[15]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH9_OUT_WIDTH10_NUM_ELEMS256_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY0_497
+u_stage_0_0_1/clk_gate_ram_i_reg[175]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH9_OUT_WIDTH10_NUM_ELEMS256_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY0_337
+u_stage_0_0_1/clk_gate_ram_i_reg[191]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH9_OUT_WIDTH10_NUM_ELEMS256_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY0_321
+u_stage_0_0_1/clk_gate_ram_i_reg[207]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH9_OUT_WIDTH10_NUM_ELEMS256_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY0_305
+u_stage_0_0_1/clk_gate_ram_i_reg[223]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH9_OUT_WIDTH10_NUM_ELEMS256_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY0_289
+u_stage_0_0_1/clk_gate_ram_i_reg[239]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH9_OUT_WIDTH10_NUM_ELEMS256_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY0_273
+u_stage_0_0_1/clk_gate_ram_i_reg[255]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH9_OUT_WIDTH10_NUM_ELEMS256_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY0_257
+u_stage_0_0_1/clk_gate_ram_i_reg[31]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH9_OUT_WIDTH10_NUM_ELEMS256_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY0_481
+u_stage_0_0_1/clk_gate_ram_i_reg[47]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH9_OUT_WIDTH10_NUM_ELEMS256_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY0_465
+u_stage_0_0_1/clk_gate_ram_i_reg[63]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH9_OUT_WIDTH10_NUM_ELEMS256_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY0_449
+u_stage_0_0_1/clk_gate_ram_i_reg[79]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH9_OUT_WIDTH10_NUM_ELEMS256_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY0_433
+u_stage_0_0_1/clk_gate_ram_i_reg[95]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH9_OUT_WIDTH10_NUM_ELEMS256_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY0_417
+u_stage_0_0_1/clk_gate_rd_ptr_reg      1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH9_OUT_WIDTH10_NUM_ELEMS256_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY0_517
+u_stage_0_0_1/clk_gate_sreg_q2_reg[15]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH9_OUT_WIDTH10_NUM_ELEMS256_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY0_513
+u_stage_0_0_1/clk_gate_sub_buf_i_reg[111]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH9_OUT_WIDTH10_NUM_ELEMS256_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY0_145
+u_stage_0_0_1/clk_gate_sub_buf_i_reg[127]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH9_OUT_WIDTH10_NUM_ELEMS256_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY0_129
+u_stage_0_0_1/clk_gate_sub_buf_i_reg[129]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH9_OUT_WIDTH10_NUM_ELEMS256_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY0_127
+u_stage_0_0_1/clk_gate_sub_buf_i_reg[159]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH9_OUT_WIDTH10_NUM_ELEMS256_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY0_97
+u_stage_0_0_1/clk_gate_sub_buf_i_reg[15]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH9_OUT_WIDTH10_NUM_ELEMS256_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY0_241
+u_stage_0_0_1/clk_gate_sub_buf_i_reg[175]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH9_OUT_WIDTH10_NUM_ELEMS256_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY0_81
+u_stage_0_0_1/clk_gate_sub_buf_i_reg[191]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH9_OUT_WIDTH10_NUM_ELEMS256_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY0_65
+u_stage_0_0_1/clk_gate_sub_buf_i_reg[207]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH9_OUT_WIDTH10_NUM_ELEMS256_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY0_49
+u_stage_0_0_1/clk_gate_sub_buf_i_reg[223]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH9_OUT_WIDTH10_NUM_ELEMS256_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY0_33
+u_stage_0_0_1/clk_gate_sub_buf_i_reg[239]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH9_OUT_WIDTH10_NUM_ELEMS256_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY0_17
+u_stage_0_0_1/clk_gate_sub_buf_i_reg[255]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH9_OUT_WIDTH10_NUM_ELEMS256_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY0_1
+u_stage_0_0_1/clk_gate_sub_buf_i_reg[31]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH9_OUT_WIDTH10_NUM_ELEMS256_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY0_225
+u_stage_0_0_1/clk_gate_sub_buf_i_reg[47]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH9_OUT_WIDTH10_NUM_ELEMS256_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY0_209
+u_stage_0_0_1/clk_gate_sub_buf_i_reg[63]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH9_OUT_WIDTH10_NUM_ELEMS256_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY0_193
+u_stage_0_0_1/clk_gate_sub_buf_i_reg[65]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH9_OUT_WIDTH10_NUM_ELEMS256_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY0_191
+u_stage_0_0_1/clk_gate_sub_buf_i_reg[95]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH9_OUT_WIDTH10_NUM_ELEMS256_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY0_161
+u_stage_0_0_1/clk_gate_total_input_reg
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH9_OUT_WIDTH10_NUM_ELEMS256_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY0_515
+u_stage_0_0_1/clk_gate_valid_timer_reg
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH9_OUT_WIDTH10_NUM_ELEMS256_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY0_514
+u_stage_0_0_1/clk_gate_wr_ptr_reg      1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH9_OUT_WIDTH10_NUM_ELEMS256_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY0_0
+u_stage_0_1_1                      15276.5734      7.6   5729.8200    9513.0670  0.0000  stage_buffer_IN_WIDTH10_OUT_WIDTH11_NUM_ELEMS128_BLK_SIZE16_PIPELINE_DEPTH2_VALID_DELAY0
+u_stage_0_1_1/clk_gate_blk_cnt_reg
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH10_OUT_WIDTH11_NUM_ELEMS128_BLK_SIZE16_PIPELINE_DEPTH2_VALID_DELAY0_260
+u_stage_0_1_1/clk_gate_ram_i_reg[111]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH10_OUT_WIDTH11_NUM_ELEMS128_BLK_SIZE16_PIPELINE_DEPTH2_VALID_DELAY0_145
+u_stage_0_1_1/clk_gate_ram_i_reg[127]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH10_OUT_WIDTH11_NUM_ELEMS128_BLK_SIZE16_PIPELINE_DEPTH2_VALID_DELAY0_129
+u_stage_0_1_1/clk_gate_ram_i_reg[15]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH10_OUT_WIDTH11_NUM_ELEMS128_BLK_SIZE16_PIPELINE_DEPTH2_VALID_DELAY0_241
+u_stage_0_1_1/clk_gate_ram_i_reg[31]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH10_OUT_WIDTH11_NUM_ELEMS128_BLK_SIZE16_PIPELINE_DEPTH2_VALID_DELAY0_225
+u_stage_0_1_1/clk_gate_ram_i_reg[47]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH10_OUT_WIDTH11_NUM_ELEMS128_BLK_SIZE16_PIPELINE_DEPTH2_VALID_DELAY0_209
+u_stage_0_1_1/clk_gate_ram_i_reg[63]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH10_OUT_WIDTH11_NUM_ELEMS128_BLK_SIZE16_PIPELINE_DEPTH2_VALID_DELAY0_193
+u_stage_0_1_1/clk_gate_ram_i_reg[79]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH10_OUT_WIDTH11_NUM_ELEMS128_BLK_SIZE16_PIPELINE_DEPTH2_VALID_DELAY0_177
+u_stage_0_1_1/clk_gate_ram_i_reg[95]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH10_OUT_WIDTH11_NUM_ELEMS128_BLK_SIZE16_PIPELINE_DEPTH2_VALID_DELAY0_161
+u_stage_0_1_1/clk_gate_rd_ptr_reg      1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH10_OUT_WIDTH11_NUM_ELEMS128_BLK_SIZE16_PIPELINE_DEPTH2_VALID_DELAY0_261
+u_stage_0_1_1/clk_gate_sreg_q2_reg[15]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH10_OUT_WIDTH11_NUM_ELEMS128_BLK_SIZE16_PIPELINE_DEPTH2_VALID_DELAY0_257
+u_stage_0_1_1/clk_gate_sub_buf_i_reg[106]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH10_OUT_WIDTH11_NUM_ELEMS128_BLK_SIZE16_PIPELINE_DEPTH2_VALID_DELAY0_22
+u_stage_0_1_1/clk_gate_sub_buf_i_reg[122]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH10_OUT_WIDTH11_NUM_ELEMS128_BLK_SIZE16_PIPELINE_DEPTH2_VALID_DELAY0_6
+u_stage_0_1_1/clk_gate_sub_buf_i_reg[26]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH10_OUT_WIDTH11_NUM_ELEMS128_BLK_SIZE16_PIPELINE_DEPTH2_VALID_DELAY0_102
+u_stage_0_1_1/clk_gate_sub_buf_i_reg[42]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH10_OUT_WIDTH11_NUM_ELEMS128_BLK_SIZE16_PIPELINE_DEPTH2_VALID_DELAY0_86
+u_stage_0_1_1/clk_gate_sub_buf_i_reg[58]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH10_OUT_WIDTH11_NUM_ELEMS128_BLK_SIZE16_PIPELINE_DEPTH2_VALID_DELAY0_70
+u_stage_0_1_1/clk_gate_sub_buf_i_reg[6]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH10_OUT_WIDTH11_NUM_ELEMS128_BLK_SIZE16_PIPELINE_DEPTH2_VALID_DELAY0_122
+u_stage_0_1_1/clk_gate_sub_buf_i_reg[71]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH10_OUT_WIDTH11_NUM_ELEMS128_BLK_SIZE16_PIPELINE_DEPTH2_VALID_DELAY0_57
+u_stage_0_1_1/clk_gate_sub_buf_i_reg[90]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH10_OUT_WIDTH11_NUM_ELEMS128_BLK_SIZE16_PIPELINE_DEPTH2_VALID_DELAY0_38
+u_stage_0_1_1/clk_gate_total_input_reg
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH10_OUT_WIDTH11_NUM_ELEMS128_BLK_SIZE16_PIPELINE_DEPTH2_VALID_DELAY0_259
+u_stage_0_1_1/clk_gate_valid_timer_reg
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH10_OUT_WIDTH11_NUM_ELEMS128_BLK_SIZE16_PIPELINE_DEPTH2_VALID_DELAY0_258
+u_stage_0_1_1/clk_gate_wr_ptr_reg      1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH10_OUT_WIDTH11_NUM_ELEMS128_BLK_SIZE16_PIPELINE_DEPTH2_VALID_DELAY0_0
+u_stage_0_2_1                       9465.3911      4.7   3590.0376    5855.4479  0.0000  stage_buffer_IN_WIDTH12_OUT_WIDTH14_NUM_ELEMS64_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY1
+u_stage_0_2_1/clk_gate_ram_i_reg[15]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH12_OUT_WIDTH14_NUM_ELEMS64_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY1_113
+u_stage_0_2_1/clk_gate_ram_i_reg[31]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH12_OUT_WIDTH14_NUM_ELEMS64_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY1_97
+u_stage_0_2_1/clk_gate_ram_i_reg[47]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH12_OUT_WIDTH14_NUM_ELEMS64_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY1_81
+u_stage_0_2_1/clk_gate_ram_i_reg[63]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH12_OUT_WIDTH14_NUM_ELEMS64_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY1_65
+u_stage_0_2_1/clk_gate_rd_ptr_reg      1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH12_OUT_WIDTH14_NUM_ELEMS64_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY1_133
+u_stage_0_2_1/clk_gate_sreg_q2_reg[15]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH12_OUT_WIDTH14_NUM_ELEMS64_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY1_129
+u_stage_0_2_1/clk_gate_sub_buf_i_reg[15]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH12_OUT_WIDTH14_NUM_ELEMS64_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY1_49
+u_stage_0_2_1/clk_gate_sub_buf_i_reg[30]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH12_OUT_WIDTH14_NUM_ELEMS64_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY1_34
+u_stage_0_2_1/clk_gate_sub_buf_i_reg[47]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH12_OUT_WIDTH14_NUM_ELEMS64_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY1_17
+u_stage_0_2_1/clk_gate_sub_buf_i_reg[62]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH12_OUT_WIDTH14_NUM_ELEMS64_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY1_2
+u_stage_0_2_1/clk_gate_total_input_reg
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH12_OUT_WIDTH14_NUM_ELEMS64_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY1_131
+u_stage_0_2_1/clk_gate_valid_timer_reg
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH12_OUT_WIDTH14_NUM_ELEMS64_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY1_130
+u_stage_0_2_1/clk_gate_wr_ptr_reg      1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH12_OUT_WIDTH14_NUM_ELEMS64_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY1_0
+u_stage_1_0_1                       5119.9847      2.6   1997.7288    3110.0063  0.0000  stage_buffer_IN_WIDTH11_OUT_WIDTH12_NUM_ELEMS32_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY1
+u_stage_1_0_1/clk_gate_ram_i_reg[10]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH11_OUT_WIDTH12_NUM_ELEMS32_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY1_54
+u_stage_1_0_1/clk_gate_ram_i_reg[31]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH11_OUT_WIDTH12_NUM_ELEMS32_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY1_33
+u_stage_1_0_1/clk_gate_rd_ptr_reg      1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH11_OUT_WIDTH12_NUM_ELEMS32_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY1_68
+u_stage_1_0_1/clk_gate_sreg_q2_reg[15]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH11_OUT_WIDTH12_NUM_ELEMS32_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY1_65
+u_stage_1_0_1/clk_gate_sub_buf_i_reg[14]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH11_OUT_WIDTH12_NUM_ELEMS32_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY1_18
+u_stage_1_0_1/clk_gate_sub_buf_i_reg[29]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH11_OUT_WIDTH12_NUM_ELEMS32_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY1_3
+u_stage_1_0_1/clk_gate_total_input_reg
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH11_OUT_WIDTH12_NUM_ELEMS32_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY1_67
+u_stage_1_0_1/clk_gate_valid_timer_reg
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH11_OUT_WIDTH12_NUM_ELEMS32_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY1_66
+u_stage_1_0_2                       3872.4047      1.9   1527.2328    2335.9847  0.0000  stage_buffer_IN_WIDTH12_OUT_WIDTH13_NUM_ELEMS16_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY1
+u_stage_1_0_2/clk_gate_ram_i_reg[15]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH12_OUT_WIDTH13_NUM_ELEMS16_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY1_17
+u_stage_1_0_2/clk_gate_rd_ptr_reg      1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH12_OUT_WIDTH13_NUM_ELEMS16_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY1_36
+u_stage_1_0_2/clk_gate_sreg_q2_reg[15]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH12_OUT_WIDTH13_NUM_ELEMS16_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY1_33
+u_stage_1_0_2/clk_gate_sub_buf_i_reg[15]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH12_OUT_WIDTH13_NUM_ELEMS16_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY1_1
+u_stage_1_0_2/clk_gate_total_input_reg
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH12_OUT_WIDTH13_NUM_ELEMS16_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY1_35
+u_stage_1_0_2/clk_gate_valid_timer_reg
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_buffer_IN_WIDTH12_OUT_WIDTH13_NUM_ELEMS16_BLK_SIZE16_PIPELINE_DEPTH0_VALID_DELAY1_34
+u_twiddle1_1                         943.2888      0.5    359.4840     580.7424  0.0000  stage_1_0_2
+u_twiddle1_1/clk_gate_cycle_counter_reg
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_1_0_2_1
+u_twiddle1_1/clk_gate_fac_reg_q_reg[15]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_1_0_2_0
+u_twiddle1_2                        5097.9911      2.5   4364.6159     730.3128  0.0000  stage_1_1_2
+u_twiddle1_2/clk_gate_blk_cnt_reg      1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_1_1_2_1
+u_twiddle1_2/clk_gate_fac_reg_q_reg[15]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_1_1_2_0
+u_twidle0_1                          847.1016      0.4    366.7224     478.8480  0.0000  stage_0_0_2
+u_twidle0_1/clk_gate_fac_reg_q_reg[15]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_0_0_2
+u_twidle0_2                         7945.1183      4.0   7307.7215     634.3344  0.0000  stage_0_1_2
+u_twidle0_2/clk_gate_fac_idx_reg       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_0_1_2_1
+u_twidle0_2/clk_gate_fac_reg_q_reg[15]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_stage_0_1_2_0
+u_twidle0_3                        14253.1751      7.1  13161.7775    1089.8664  0.0000  twidle0_3_IN_WIDTH14_OUT_WIDTH23
+u_twidle0_3/clk_gate_data_idx_reg      1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_twidle0_3_IN_WIDTH14_OUT_WIDTH23
+u_twidle1_3                         8106.6599      4.0   6921.6503    1183.4784  0.0000  twidle1_3_IN_WIDTH15_OUT_WIDTH25
+u_twidle1_3/clk_gate_dout_i_reg[15]
+                                       1.5312      0.0      0.0000       1.5312  0.0000  SNPS_CLOCK_GATE_HIGH_twidle1_3_IN_WIDTH15_OUT_WIDTH25
+--------------------------------  -----------  -------  ----------  -----------  ------  -----------------------------------------------------------------------------------------------------------------
+Total                                                   99203.4552  101182.5983  0.0000
+
+Error: unknown option '-hierarchy' (CMD-010)

@@ -1,0 +1,16 @@
+# FFT 모듈 파일 리스트
+lappend search_path  ../verilog ../fft_module/syn_test/fft_fixed_valid
+
+set net_list "\
+fft_fixed_valid/bit_reversal_reorder.sv\
+fft_fixed_valid/cbfp.sv\
+fft_fixed_valid/twiddle.sv\
+fft_fixed_valid/butter_fly.sv\
+fft_fixed_valid/top.sv
+"
+
+# 파일 분석
+analyze -format sverilog -library WORK $net_list
+
+# 엘라보레이션
+elaborate top -library WORK

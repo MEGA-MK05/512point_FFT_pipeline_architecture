@@ -1,0 +1,1 @@
+dc_shell -f fft_module.tcl | tee run.log
